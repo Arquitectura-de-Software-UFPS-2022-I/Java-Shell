@@ -1,10 +1,11 @@
 package Principal;
 
-import Conexion.Conexion;
+import Control.Controller;
+import Model.User;
+import Services.Conexion;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.PreparedStatement;
 import java.util.Scanner;
 
 /**
@@ -13,7 +14,45 @@ import java.util.Scanner;
  */
 public class Main {
 
+    static Scanner sc = new Scanner(System.in);
     Conexion c = new Conexion();
+    static Controller controller = new Controller();
+    static User user = new User();
+    static int options = 1;
+    static int option = 1;
+
+    public static boolean logIn() {
+        boolean res = true;
+        System.out.println("\nDigite código");
+        int cod = sc.nextInt();
+        System.out.println("Digite su contraseña");
+        String pass = sc.next();
+        if (cod != 0 && pass != "") {
+            res = controller.login(cod, pass);
+        }
+        return res;
+    }
+
+    public static void singUp() {
+        System.out.println("--Registrar--");
+        System.out.println("\nDigite código");
+        int cod = sc.nextInt();
+        user.setId_user(cod);
+        System.out.println("Digite su nombre");
+        String name = sc.next();
+        user.setName(name);
+        System.out.println("Digite su email");
+        String mail = sc.next();
+        user.setEmail(mail);
+        System.out.println("Digite su contraseña");
+        String pass = sc.next();
+        user.setPassword(pass);
+        if (cod != 0 && name != "" && mail != "" && pass != "") {
+            controller.singUp(user);
+        } else {
+            System.out.println("Fallo al registrar");
+        }
+    }
 
     public static void archivo() {
         try {
@@ -37,9 +76,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int options = 1;
-        int option = 1;
+
         try {
             //Start menu
             while (options != 0) {
@@ -47,17 +84,15 @@ public class Main {
                         + "    1. Iniciar sesión \n"
                         + "    2. Regitrar nuevo usuario \n"
                         + "    0. Salir \n"
-                        + "********************************");
+                        + "******************************** \n");
 
                 System.out.println("Ingresa el número de la opción");
                 options = sc.nextInt();
-
-                switch (options) {
-                    case 0:
-                        break;
-                    case 1:
-                        //Log in
-                        System.out.println("Iniciar sesion");
+                if (options == 1) {
+                    //Log in
+                    if (logIn()) {
+                        option = 1;
+                        System.out.println("---Bienvenido---");
                         while (option != 0) {
                             System.out.println("************Acciones************* \n"
                                     + "    1. Subir firma \n"
@@ -73,6 +108,8 @@ public class Main {
                             switch (option) {
                                 case 0:
                                     //End
+                                    controller.logOut();
+                                    option = 0;
                                     System.out.println("Sesión cerrada");
                                     break;
                                 case 1:
@@ -84,7 +121,7 @@ public class Main {
                                     //Upload PDF
                                     System.out.println("Subir PDF");
                                     Conexion conec = new Conexion();
-                                    
+
                                     System.out.println(conec);
                                     break;
                                 case 3:
@@ -107,18 +144,19 @@ public class Main {
                                     break;
                             }
                         }
-                        break;
-                    case 2:
-                        //Sing in
-                        System.out.println("Registrar");
-                        break;
-                    default:
-                        break;
+                    } else {
+                        System.out.println("Fallo al iniciar sesión");
+                    }
+
+                } else if (options == 2) {
+                    //Sing up
+                    singUp();
+                } else {
+                    System.out.println("Número digitado erroneo");
                 }
             }
         } catch (Exception e) {
             System.out.println("Error " + e);
         }
     }
-
 }

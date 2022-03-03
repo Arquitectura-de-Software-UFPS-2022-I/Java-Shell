@@ -67,7 +67,5 @@ int id_signature;
     @Override
     public String toString() {
         return "User{" + "id_user=" + id_user + ", name=" + name + ", email=" + email + ", password=" + password + ", id_signature=" + id_signature + '}';
-    }
-
-    
+    }    
 }
