@@ -32,6 +32,7 @@ El [script](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/bl
 _Las herramientas utilizadas para el desarrollo del proyecto fueron:_
 
 * [NetBeans](https://netbeans.apache.org) - IDE utilizado
+* [Xampp](https://www.apachefriends.org/es/index.html) -Paquete de software libre
 
 _Las siguientes son dependencias requeridas para ejecutar el programa_
 
