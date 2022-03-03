@@ -2,87 +2,47 @@
 Software que permite firmar digitalmente un documento en formato PDF desde la consola.
 
 
+## Requerimientos📄
+
+Este proyecto cuenta con los siguientes requerimientos:
+
+* **Registrarse en la aplicación para poder usarla** 
+* **Registrar una firma, lo que consiste en subir una imagen**
+* **Subir un documento PDF y solicitar la firma de usuarios registrados en la plataforma**
+* **Firmar un documento PDF para el cual se ha solicitado la firma**
+* **Debe quedar el registro histórico de las firmas**
+
+
+## Objetivos 🏆
+
+Este proyecto cuenta con:
+
+* **Objetivo General 💯** - *Desarrollo de un Software que permita firmar un documento PDF.*
+
+* **Objetivo Específico🎯 ** - *Permitir registrarse en el programa, permitir registrar la firma del usuario, permitir subir docuemento PDF, solicitar la firma y firmar documento.*
+
+
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_Las herramientas utilizadas para el desarrollo del proyecto fueron:_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [NetBeans](https://netbeans.apache.org) - IDE utilizado
 
-### Instalación 🔧
+_Las siguientes son dependencias requeridas para ejecutar el programa_
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
+* [io-7.1.7.jar](https://mvnrepository.com/artifact/com.itextpdf/io/7.1.7) - Dependencia
+* [kernel-7.1.13.jar](https://mvnrepository.com/artifact/com.itextpdf/kernel/7.1.7 - Dependencia
+* [layout-7.1.13.jar] (https://mvnrepository.com/artifact/com.itextpdf/layout/7.1.7)- Dependencia
 
 
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Lina Vera** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
+* **Lina Vera** - *Trabajo Inicial* - [LinaVera](https://github.com/LinaVera)
 * **Ronaldo Arias** - *Trabajo Inicial* - [ariasRonaldo25](https://github.com/ariasRonaldo25)
 * **Andrea Villamil** - *Trabajo Inicial* - [Andrea-lol](https://github.com/Andrea-lol)
-* **Noheli Villa** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
+* **Noheli Villa** - *Trabajo Inicial* - [Noheli23](https://github.com/Noheli23)
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/graphs/contributors) quíenes han participado en este proyecto. 
 
-## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
