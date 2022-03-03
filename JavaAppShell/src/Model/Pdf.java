@@ -9,7 +9,7 @@ import java.io.File;
 public class Pdf {
 
     int id_pdf;
-    File file;
+    byte[] file;
     float pos_x;
     float pos_y;
     int status;
@@ -17,7 +17,7 @@ public class Pdf {
     public Pdf() {
     }
 
-    public Pdf(int id_pdf, File file, float pos_x, float pos_y, int status) {
+    public Pdf(int id_pdf, byte[] file, float pos_x, float pos_y, int status) {
         this.id_pdf = id_pdf;
         this.file = file;
         this.pos_x = pos_x;
@@ -33,11 +33,11 @@ public class Pdf {
         this.id_pdf = id_pdf;
     }
 
-    public File getFile() {
+    public byte[] getFile() {
         return file;
     }
 
-    public void setFile(File file) {
+    public void setFile(byte[] file) {
         this.file = file;
     }
 
