@@ -1,10 +1,6 @@
 # JavaShell
 Software que permite firmar digitalmente un documento en formato PDF desde la consola.
 
-### Pre-requisitos 📋
-
-Lo que necesita el software para su instalación y funcionamiento es:
-
 
 ## Construido con 🛠️
 
