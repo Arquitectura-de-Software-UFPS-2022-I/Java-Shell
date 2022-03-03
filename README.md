@@ -52,13 +52,6 @@ Da un ejemplo
 
 _Agrega notas adicionales sobre como hacer deploy_
 
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
 
 ## Contribuyendo 🖇️
 
@@ -76,10 +69,12 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Lina Vera** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
+* **Ronaldo Arias** - *Trabajo Inicial* - [ariasRonaldo25](https://github.com/ariasRonaldo25)
+* **Andrea Villamil** - *Trabajo Inicial* - [Andrea-lol](https://github.com/Andrea-lol)
+* **Noheli Villa** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/graphs/contributors) quíenes han participado en este proyecto. 
 
 ## Licencia 📄
 
