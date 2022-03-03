@@ -17,9 +17,9 @@ Este proyecto cuenta con los siguientes requerimientos:
 
 Este proyecto cuenta con:
 
-* **Objetivo General 💯** - *Desarrollo de un Software que permita firmar un documento PDF.*
+* **Objetivo General 💯** - *Desarrollo de un Software que permita firmar un documento PDF.*-
 
-* **Objetivo Específico🎯 ** - *Permitir registrarse en el programa, permitir registrar la firma del usuario, permitir subir docuemento PDF, solicitar la firma y firmar documento.*
+* **Objetivo Específico🎯 ** - *Permitir registrarse en el programa, permitir registrar la firma del usuario, permitir subir docuemento PDF, solicitar la firma y firmar documento.*-
 
 
 ## Construido con 🛠️
