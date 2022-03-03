@@ -31,7 +31,7 @@ _Las herramientas utilizadas para el desarrollo del proyecto fueron:_
 _Las siguientes son dependencias requeridas para ejecutar el programa_
 
 * [io-7.1.7.jar](https://mvnrepository.com/artifact/com.itextpdf/io/7.1.7) - Dependencia
-* [kernel-7.1.7.jar](https://mvnrepository.com/artifact/com.itextpdf/kernel/7.1.7 - Dependencia
+* [kernel-7.1.7.jar](https://mvnrepository.com/artifact/com.itextpdf/kernel/7.1.7)- Dependencia
 * [layout-7.1.7.jar](https://mvnrepository.com/artifact/com.itextpdf/layout/7.1.7)- Dependencia
 
 
