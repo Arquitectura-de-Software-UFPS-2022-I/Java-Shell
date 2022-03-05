@@ -24,7 +24,7 @@ Este proyecto cuenta con los siguientes requerimientos:
 * **Subir un documento PDF y solicitar la firma de usuarios registrados en la plataforma**
 * **Firmar un documento PDF para el cual se ha solicitado la firma**
 * **Debe quedar el registro histórico de las firmas**
-
+---
 
 ## Objetivos🏆
 
@@ -34,7 +34,7 @@ Este proyecto cuenta con:
 
 * Objetivo Específico🎯  - *Permitir registrarse en el programa, permitir registrar la firma del usuario, permitir subir docuemento PDF, solicitar la firma y firmar documento.*
 
-
+---
 ## Base de Datos 🗃️
 
 El [script](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/blob/main/digital_signature.sql) contiene las tablas trabajadas para la realización de este proyecto como son: pdf, request, signature y user. Las cuales componen la base de datos del proyecto.
