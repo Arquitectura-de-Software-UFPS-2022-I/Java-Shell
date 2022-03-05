@@ -2,6 +2,16 @@
 Software que permite firmar digitalmente un documento en formato PDF desde la consola.
 
 
+## Tabla de contenidos:
+---
+
+- [Requerimientos](#requerimientos)
+- [Objetivos](#objetivos)
+- [Base de Datos](#base-de-datos)
+- [Construcción](#construido-con)
+- [Autores](#autores)
+
+
 ## Requerimientos📄
 
 Este proyecto cuenta con los siguientes requerimientos:
@@ -17,7 +27,7 @@ Este proyecto cuenta con los siguientes requerimientos:
 
 Este proyecto cuenta con:
 
-* **Objetivo General 💯** - *Desarrollo de un Software que permita firmar un documento PDF.*
+* **Objetivo General 💯** - *Desarrollo de un software que permita firmar un documento PDF.*
 
 * Objetivo Específico🎯  - *Permitir registrarse en el programa, permitir registrar la firma del usuario, permitir subir docuemento PDF, solicitar la firma y firmar documento.*
 
@@ -25,6 +35,11 @@ Este proyecto cuenta con:
 ## Base de Datos 🗃️
 
 El [script](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/blob/main/digital_signature.sql) contiene las tablas trabajadas para la realización de este proyecto como son: pdf, request, signature y user. Las cuales componen la base de datos del proyecto.
+
+
+## Arquitectura 📝🔧⚙️
+
+La arquitectura del proyecto
 
 
 ## Construido con 🛠️
