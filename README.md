@@ -37,7 +37,7 @@ Este proyecto cuenta con:
 El [script](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/blob/main/digital_signature.sql) contiene las tablas trabajadas para la realización de este proyecto como son: pdf, request, signature y user. Las cuales componen la base de datos del proyecto.
 
 
-## Arquitectura 📝🔧⚙️
+## Arquitectura 📝
 
 La arquitectura del proyecto
 
@@ -56,6 +56,13 @@ _Las siguientes son dependencias requeridas para ejecutar el programa_
 * [layout-7.1.7.jar](https://mvnrepository.com/artifact/com.itextpdf/layout/7.1.7)- Dependencia
 
 
+## Guía de usuario 📑🧑
+---
+Explica los pasos básicos sobre cómo usar la herramienta digital. Es una buena sección para mostrar capturas de pantalla o gifs que ayuden a entender la herramienta digital.
+ 	
+## Guía de instalación 💻📑
+---
+Explica los pasos básicos sobre cómo instalar el programa.
 
 ## Autores ✒️
 
