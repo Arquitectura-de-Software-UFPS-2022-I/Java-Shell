@@ -5,14 +5,14 @@ Software que permite firmar digitalmente un documento en formato PDF desde la co
 
 ## Tabla de contenidos:
 
-- [Requerimientos]
-- [Objetivos](#objetivos)
-- [Base de Datos](#base-de-datos)
-- [Arquitectura](#arquitectura)
-- [Construido con](#construido-con)
-- [Guía de Usuario]
-- [Guía de Instalación]
-- [Autores]
+- Requerimientos
+- Objetivos
+- Base de Datos
+- Arquitectura
+- Herramientas Utilizadas
+- Guía de Usuario
+- Guía de Instalación
+- Autores
 ---
 
 ## Requerimientos📄
@@ -45,7 +45,7 @@ El [script](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/bl
 La arquitectura del proyecto
 ---
 
-## Construido con 🛠️
+## Herramientas Utilizadas 🛠️
 
 _Las herramientas utilizadas para el desarrollo del proyecto fueron:_
 
