@@ -9,9 +9,9 @@ Software que permite firmar digitalmente un documento en formato PDF desde la co
 - [Objetivos](#objetivos)
 - [Base de Datos](#base-de-datos)
 - [Arquitectura](#arquitectura)
-- [Construcción](#construido-con)
-- [Guía de Usuario](#guia-de-usuario)
-- [Guía de Instalación](#guia-de-instalación)
+- [Construido con](#construido-con)
+- [Guía de Usuario](#guía-de-usuario)
+- [Guía de Instalación](#guía-de-instalación)
 - [Autores](#autores)
 
 
