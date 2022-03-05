@@ -1,14 +1,16 @@
 # JavaShell💻
 Software que permite firmar digitalmente un documento en formato PDF desde la consola.
-
+---
 
 ## Tabla de contenidos:
----
 
 - [Requerimientos](#requerimientos)
 - [Objetivos](#objetivos)
 - [Base de Datos](#base-de-datos)
+- [Arquitectura](#arquitectura)
 - [Construcción](#construido-con)
+- [Guía de Usuario](#guia-de-usuario)
+- [Guía de Instalación](#guia-de-instalación)
 - [Autores](#autores)
 
 
@@ -23,7 +25,7 @@ Este proyecto cuenta con los siguientes requerimientos:
 * **Debe quedar el registro histórico de las firmas**
 
 
-## Objetivos 🏆
+## Objetivos🏆
 
 Este proyecto cuenta con:
 
@@ -60,9 +62,11 @@ _Las siguientes son dependencias requeridas para ejecutar el programa_
 ---
 Explica los pasos básicos sobre cómo usar la herramienta digital. Es una buena sección para mostrar capturas de pantalla o gifs que ayuden a entender la herramienta digital.
  	
+	
 ## Guía de instalación 💻📑
 ---
 Explica los pasos básicos sobre cómo instalar el programa.
+
 
 ## Autores ✒️
 
