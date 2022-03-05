@@ -1,6 +1,5 @@
 # JavaShell💻
-
-Software que permite firmar digitalmente un documento en formato PDF desde la consola.
+_Software que permite firmar digitalmente un documento en formato PDF desde la consola.
 ---
 
 ## Tabla de contenidos:
@@ -37,7 +36,7 @@ Este proyecto cuenta con:
 
 ## Base de Datos 🗃️
 
-El [script](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/blob/main/digital_signature.sql) contiene las tablas trabajadas para la realización de este proyecto como son: pdf, request, signature y user. Las cuales componen la base de datos del proyecto.
+_El [script](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/blob/main/digital_signature.sql) contiene las tablas trabajadas para la realización de este proyecto como son: pdf, request, signature y user. Las cuales componen la base de datos del proyecto.
 ---
 
 ## Arquitectura 📝
