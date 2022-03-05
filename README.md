@@ -3,18 +3,6 @@
 Software que permite firmar digitalmente un documento en formato PDF desde la consola.
 
 
-## Tabla de contenidos:
-
-- [Requerimientos](#requerimientos)
-- [Objetivos](#objetivos)
-- [Base de Datos](#basededatos)
-- [Arquitectura](#arquitectura)
-- [Construido con](#construido-con)
-- [Guía de Usuario](#guía-de-usuario)
-- [Guía de Instalación](#guía-de-instalación)
-- [Autores](#autores)
----
-
 ## Requerimientos📄
 
 Este proyecto cuenta con los siguientes requerimientos:
