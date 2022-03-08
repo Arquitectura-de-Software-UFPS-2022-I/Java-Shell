@@ -4,13 +4,6 @@ import Control.Controller;
 import Model.Pdf;
 import Model.User;
 import Services.Conexion;
-import Services.PDFs;
-import com.itextpdf.io.image.ImageData;
-import com.itextpdf.io.image.ImageDataFactory;
-import com.itextpdf.kernel.pdf.PdfDocument;
-import com.itextpdf.kernel.pdf.PdfWriter;
-import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.Image;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,10 +11,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Scanner;
-import javax.swing.filechooser.FileNameExtensionFilter;
-import org.apache.commons.mail.DefaultAuthenticator;
-import org.apache.commons.mail.SimpleEmail;
-
 /**
  *
  * @author Java-Shell
@@ -106,26 +95,26 @@ public class Main {
 
     //3. Solicitar firmas 
     public static void requestSignature() {
-        String em = "linavanessavepu@ufps.edu.co";
-        String pass = "linaca01";
-
-        SimpleEmail email = new SimpleEmail();
-
-        email.setHostName("smtp.gmail.com");
-        email.setSmtpPort(465);
-        email.setAuthenticator(new DefaultAuthenticator(em, pass));
-        email.setSSLOnConnect(true);
-
-        try {
-            email.setFrom(em);
-            email.setSubject("prueba");
-            email.setMsg("Enviando email desde java");
-            email.addTo(em);
-            email.send();
-            System.out.println("Envio exitoso");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        String em = "linavanessavepu@ufps.edu.co";
+//        String pass = "linaca01";
+//
+//        SimpleEmail email = new SimpleEmail();
+//
+//        email.setHostName("smtp.gmail.com");
+//        email.setSmtpPort(465);
+//        email.setAuthenticator(new DefaultAuthenticator(em, pass));
+//        email.setSSLOnConnect(true);
+//
+//        try {
+//            email.setFrom(em);
+//            email.setSubject("prueba");
+//            email.setMsg("Enviando email desde java");
+//            email.addTo(em);
+//            email.send();
+//            System.out.println("Envio exitoso");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 
     //4. Mostrar todos los PDFs 
@@ -135,43 +124,43 @@ public class Main {
 
     //5. Firmar PDF
     public static void signPDF() {
-        try {
-            // path where the pdf is to be created.
-            String path = "C:\\Users\\Lina\\OneDrive\\Escritorio\\Calendario2022-1.pdf";
-            PdfWriter pdfwriter = new PdfWriter(path);
-
-            //Creating a PdfDocument object.
-            //passing PdfWriter object constructor
-            PdfDocument pdfdocument
-                    = new PdfDocument(pdfwriter);
-
-            // Creating a Document and
-            // passing pdfDocument object
-            Document document = new Document(pdfdocument);
-
-            // Create an ImageData object
-            String imageFile = "C:\\Users\\Lina\\OneDrive\\Imágenes\\ink.png";
-            ImageData data
-                    = ImageDataFactory.create(imageFile);
-            // Creating an Image object
-            Image image = new Image(data);
-
-            // Set the position of the image.
-            image.setFixedPosition(50, 100);
-            image.setWidth(64);
-            image.setHeight(64);
-
-            // Adding image to the document
-            document.add(image);
-            // Closing the document
-            document.close();
-
-            System.out.println(
-                    "Image  position set successfully in pdf");
-        } catch (Exception e) {
-            System.out.println(
-                    "unable to set image position due to " + e);
-        }
+//        try {
+//            // path where the pdf is to be created.
+//            String path = "C:\\Users\\Lina\\OneDrive\\Escritorio\\Calendario2022-1.pdf";
+//            PdfWriter pdfwriter = new PdfWriter(path);
+//
+//            //Creating a PdfDocument object.
+//            //passing PdfWriter object constructor
+//            PdfDocument pdfdocument
+//                    = new PdfDocument(pdfwriter);
+//
+//            // Creating a Document and
+//            // passing pdfDocument object
+//            Document document = new Document(pdfdocument);
+//
+//            // Create an ImageData object
+//            String imageFile = "C:\\Users\\Lina\\OneDrive\\Imágenes\\ink.png";
+//            ImageData data
+//                    = ImageDataFactory.create(imageFile);
+//            // Creating an Image object
+//            Image image = new Image(data);
+//
+//            // Set the position of the image.
+//            image.setFixedPosition(50, 100);
+//            image.setWidth(64);
+//            image.setHeight(64);
+//
+//            // Adding image to the document
+//            document.add(image);
+//            // Closing the document
+//            document.close();
+//
+//            System.out.println(
+//                    "Image  position set successfully in pdf");
+//        } catch (Exception e) {
+//            System.out.println(
+//                    "unable to set image position due to " + e);
+//        }
     }
 
     //6. Descargar PDF
