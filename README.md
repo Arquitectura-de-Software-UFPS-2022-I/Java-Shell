@@ -6,6 +6,7 @@ Software que permite firmar digitalmente un documento en formato PDF desde la co
 
 - Requerimientos
 - Objetivos
+-Organización del Equipo de Trabajo
 - Base de Datos
 - Arquitectura
 - Herramientas Utilizadas
@@ -33,6 +34,10 @@ Este proyecto cuenta con:
 
 * Objetivo Específico🎯  - *Permitir registrarse en el programa, permitir registrar la firma del usuario, permitir subir docuemento PDF, solicitar la firma y firmar documento.*
 
+
+## Organización del Equipo de Trabajo 📅
+
+![Image text](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/blob/main/img/Organigrama%20Java%20Shell.png)
 
 ## Base de Datos 🗃️
 
@@ -62,10 +67,6 @@ _Las siguientes son dependencias requeridas para ejecutar el programa_
 Explica los pasos básicos sobre cómo usar la herramienta digital. Es una buena sección para mostrar capturas de pantalla o gifs que ayuden a entender la herramienta digital.
 
 	
-## Guía de instalación 💻📑
-Explica los pasos básicos sobre cómo instalar el programa.
-
-
 ## Autores ✒️
 
 * **Lina Vera** - *Trabajo Inicial* - [LinaVera](https://github.com/LinaVera)
@@ -75,4 +76,4 @@ Explica los pasos básicos sobre cómo instalar el programa.
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/graphs/contributors) quíenes han participado en este proyecto. 
 
-
+--
