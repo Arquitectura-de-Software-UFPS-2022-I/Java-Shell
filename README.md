@@ -43,12 +43,12 @@ Este organigrama ilustra la distribución del equipo de trabajo de Java Shell.
 
 ## Base de Datos 🗃️
 
-El [script](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/blob/main/digital_signature.sql) contiene las tablas trabajadas para la realización de este proyecto como son: pdf, request, signature y user. Las cuales componen la base de datos del proyecto.
+El [script](https://github.com/Arquitectura-de-Software-UFPS-2022-I/JavaShell/blob/main/ScriptTarea0.sql) contiene las tablas trabajadas para la realización de este proyecto como son: siganature_request_user, signature_request, file, user. Las cuales componen la base de datos del proyecto y se encuentran explicadas de mejor manera en la documentación completa del proyecto.
 
 
 ## Arquitectura 📝
 
-La arquitectura del proyecto
+La arquitectura del proyecto se encuentra explicada en el documento total del proyecto, pero a grandes rasgos se optó por una que se compone por las tres plataformas en las cuales se desarrollará la aplicación las cuales son: Web, Desktop y Shell y se optó por una base de datos descentralizada desplegada en la nube.
 
 
 ## Herramientas Utilizadas 🛠️
