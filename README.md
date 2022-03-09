@@ -19,11 +19,18 @@ Software que permite firmar digitalmente un documento en formato PDF desde la co
 
 Este proyecto cuenta con los siguientes requerimientos:
 
-* **Registrarse en la aplicación para poder usarla** 
-* **Registrar una firma, lo que consiste en subir una imagen**
-* **Subir un documento PDF y solicitar la firma de usuarios registrados en la plataforma**
-* **Firmar un documento PDF para el cual se ha solicitado la firma**
-* **Debe quedar el registro histórico de las firmas**
+* **Registro de usuario** 
+* **Inicio de sesión**
+* **Subir firmas**
+* **Verificación de firma**
+* **Subir documento**
+* **Solicitud de firma**
+* **Firmar documento**
+* **Generar PDF firmado**
+* **Listado de documentos pendientes por firma**
+* **Listado de solicitudes de firmas aprobadas**
+* **Listado de solicitudes de firmas pendientes**
+* **Listado histórico de firmas**
 
 
 ## Objetivos🏆
