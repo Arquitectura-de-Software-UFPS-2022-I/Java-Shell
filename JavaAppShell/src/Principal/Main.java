@@ -44,7 +44,6 @@ public class Main {
             String pass = sc.next();
             //Llamo al UserServiceImpl
             udto = us.loginUser(pass, username);
-            System.out.println(udto);
             return (udto != null);
         } catch (Exception e) {
             System.out.println("Error" + e.getMessage());
@@ -69,8 +68,8 @@ public class Main {
             System.out.println("Digite su contraseña");
             String pass = sc.next();
             udto.setPassword(pass);
-            System.out.println(us.saveUser(udto));
-
+            us.saveUser(udto);
+            System.out.println("Usuario registrado");
         } catch (Exception e) {
             System.out.println("Error" + e.getMessage());
         }
@@ -78,49 +77,34 @@ public class Main {
 
     //Services menu
     //1. Subir firma - R3. Subir firmas
-    public static List uploadSignature() {
+    public static void uploadSignature() {
         try {
             System.out.println("Digite la ruta de la firma a registrar");
             String path = sc.next();
             path = path.replace("\\", "/");
             String[] parts = path.split("/");
             String nameIMG = parts[parts.length - 1];
-            System.out.println(nameIMG);
             File file = new File(path);
-
-            System.out.println(fs.saveFile(nameIMG, file));
-            List<FileDto> lista = fs.getFiles();
-            return lista;
-
+            fs.saveFile(nameIMG, file);
+            System.out.println("Firma registrada exitosamente");
         } catch (Exception e) {
             System.out.println("Error" + e.getMessage());
-
-            return null;
-
         }
-
     }
 
     //2. Subir PDF - R5. Subir documento
-    public static List uploadPDF() {
+    public static void uploadPDF() {
         try {
             System.out.println("Digite la ruta del PDF a guardar");
             String path = sc.next();
             path = path.replace("\\", "/");
             String[] parts = path.split("/");
             String namePDF = parts[parts.length - 1];
-
             File file = new File(path);
-
-            System.out.println(fs.saveFile(namePDF, file));
-            List<FileDto> lista = fs.getFiles();
-            return lista;
-
+            fs.saveFile(namePDF, file);
+            System.out.println("PDF registrado exitosamente");
         } catch (Exception e) {
             System.out.println("Error" + e.getMessage());
-
-            return null;
-
         }
     }
 
@@ -161,27 +145,29 @@ public class Main {
             srudto.setRequest(stDto.getId());
 
             srudto = srus.saveRequest(srudto);
-
-            System.out.println(stDto);
-            System.out.println(srudto);
-
+            System.out.println("Solicitud enviada");
         } catch (Exception e) {
             System.out.println("Error" + e.getMessage());
         }
     }
 
-    //4. Mostrar todos los PDFs 
-    public static void showPDF() {
+    //4. Mostrar todos los PDFs - R6. Listado de documentos, R13. Listado historico de firmas
+    public static void list_all_signature_history() throws Exception {
+        List<SignatureRequestUserDto> list = srus.getRequestUser(udto.getId());
 
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.printf("%10s %10s %5s %5s", "ID USUARIO ENVIADO - ", "¿FIRMADO? - ", "FECHA DE CREACCIÓN - ", "FECHA DE LA FIRMA");
+        System.out.println();
+        System.out.println("-----------------------------------------------------------------------------");
+        for (SignatureRequestUserDto us : list) {
+            System.out.format("%10s %20s %5d %5c",
+                    us.getUser(), us.isSigned(), us.getCreated_date(), us.getSignature_date());
+            System.out.println();
+        }
+        System.out.println("-----------------------------------------------------------------------------");
     }
 
-//4	Verificación de firma
-//6	Listado de documentos
-//10	Listado de documentos pendientes por firmar
-//11	Listado de solicitudes de firmas aprobadas
-//12	Listado de solicitudes de firmas pendientes
-//13	Listado historico de firmas
-    //5. Firmar PDF - R8	Firmar documento
+    //5. Firmar PDF - R8. Firmar documento
     public static void signPDF() {
         try {
             //pedir la request y y aprobar la firma""
@@ -193,6 +179,7 @@ public class Main {
             srudto.setSigned(true);
             srudto.setSignature_date(date);
             srus.updateRequest(srudto);
+            System.out.println("Documento firmado exitosamente");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -207,10 +194,28 @@ public class Main {
             System.out.println("Digite dirección");
             String dir = sc.next();
             fs.downloadFileSigned(dir, cod);
+            System.out.println("Documento guardado en: " + dir);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
+
+    //8. Mostrar el listado de solicitudes de firmas aprobadas - R11. Listado de solicitudes de firmas aprobadas
+    public static void list_all_signature_requests() throws Exception {
+        List<SignatureRequestDto> list = srs.getRequestUser(udto.getId());
+
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.printf("%10s %10s %10s %5s", "ID USUARIO- ", "ASUNTO - ", "FECHA DE CREACCIÓN - ", "ID DOCUMENTO");
+        System.out.println();
+        System.out.println("-----------------------------------------------------------------------------");
+        for (SignatureRequestDto re : list) {
+            System.out.format("%10s %20s %5d %5c",
+                    re.getUser(), re.getSubject(), re.getCreate_date(), re.getDocument());
+            System.out.println();
+        }
+        System.out.println("-----------------------------------------------------------------------------");
+    }
+    /////////////////////////////////////////////////////////////////////
 
     public static void showOptions() {
         //Services menu
@@ -218,14 +223,15 @@ public class Main {
                 + "    1. Subir firma \n"
                 + "    2. Subir PDF \n"
                 + "    3. Solicitar firmas \n"
-                + "    4. Mostrar todos los PDFs \n"
+                + "    4. Mostrar el listado de historico de firmas \n"
                 + "    5. Firmar PDF \n"
                 + "    6. Descargar PDF \n"
+                + "    7. Mostrar el listado de solicitudes de firmas aprobadas \n"
                 + "    0. Cerrar sesión \n"
                 + "********************************");
     }
 
-    public static void options() {
+    public static void options() throws Exception {
         while (option != 0) {
             showOptions();
             System.out.println("Ingresa el número del servicio");
@@ -254,7 +260,7 @@ public class Main {
                 case 4:
                     //Show PDFs
                     System.out.println("Mostrar PDFs");
-                    showPDF();
+                    list_all_signature_history();
                     break;
                 case 5:
                     //Sing a PDF
@@ -266,12 +272,16 @@ public class Main {
                     System.out.println("Descargar PDFs");
                     downloadPDF();
                     break;
+                case 7:
+                    //list_all_signature_requests
+                    System.out.println("Listado de solicitudes de firmas aprobadas");
+                    list_all_signature_requests();
+                    break;
                 default:
                     break;
             }
         }
     }
-    /////////////////////////////////////////////////////////////////////
 
     public static void main(String[] args) {
         try {
@@ -300,6 +310,8 @@ public class Main {
                     System.out.println("Número digitado erroneo");
                 }
             }
+            options = 1;
+            option = 1;
         } catch (Exception e) {
             System.out.println("Error " + e);
         }
