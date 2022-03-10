@@ -160,7 +160,7 @@ public class Main {
         System.out.println();
         System.out.println("-----------------------------------------------------------------------------");
         for (SignatureRequestUserDto us : list) {
-            System.out.format("%10s %20s %5d %5c",
+            System.out.format("%10d %10b %5s %5s",
                     us.getUser(), us.isSigned(), us.getCreated_date(), us.getSignature_date());
             System.out.println();
         }
@@ -208,11 +208,13 @@ public class Main {
         System.out.printf("%10s %10s %10s %5s", "ID USUARIO- ", "ASUNTO - ", "FECHA DE CREACCIÓN - ", "ID DOCUMENTO");
         System.out.println();
         System.out.println("-----------------------------------------------------------------------------");
-        for (SignatureRequestDto re : list) {
-            System.out.format("%10s %20s %5d %5c",
+        list.stream().map(re -> {
+            System.out.format("%10d %20s %5s %5d",
                     re.getUser(), re.getSubject(), re.getCreate_date(), re.getDocument());
+            return re;
+        }).forEachOrdered(_item -> {
             System.out.println();
-        }
+        });
         System.out.println("-----------------------------------------------------------------------------");
     }
     /////////////////////////////////////////////////////////////////////
